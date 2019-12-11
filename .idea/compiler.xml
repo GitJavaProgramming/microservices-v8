@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gateway-v8" />
+        <module name="gamification-v8" />
+        <module name="social-multiplication-v8" />
+        <module name="service-registry-v8" />
+        <module name="ui-v8" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gamification-v8" target="1.8" />
+      <module name="gateway-v8" target="1.8" />
+      <module name="service-registry-v8" target="1.8" />
+      <module name="social-multiplication-v8" target="1.8" />
+      <module name="ui-v8" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gamification-v8" options="-parameters" />
+      <module name="gateway-v8" options="-parameters" />
+      <module name="service-registry-v8" options="-parameters" />
+      <module name="social-multiplication-v8" options="-parameters" />
+      <module name="ui-v8" options="-parameters" />
+    </option>
+  </component>
+</project>

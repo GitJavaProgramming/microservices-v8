@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gamification/gamification-v8.iml" filepath="$PROJECT_DIR$/gamification/gamification-v8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway-v8.iml" filepath="$PROJECT_DIR$/gateway/gateway-v8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/microservices-v8-master.iml" filepath="$PROJECT_DIR$/.idea/microservices-v8-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-registry/service-registry-v8.iml" filepath="$PROJECT_DIR$/service-registry/service-registry-v8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social-multiplication/social-multiplication-v8.iml" filepath="$PROJECT_DIR$/social-multiplication/social-multiplication-v8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui/ui.iml" filepath="$PROJECT_DIR$/ui/ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui-v8/ui-v8.iml" filepath="$PROJECT_DIR$/ui-v8/ui-v8.iml" />
+    </modules>
+  </component>
+</project>
