@@ -11,3 +11,22 @@ Eureka注册中心设置：
     eureka.client.register-with-eureka=false  
     eureka.client.fetch-registry: false  
     eureka.client.service-url.defaultZone: http://localhost:8761/eureka/  
+    
+测试一次：负载均衡出错
+
+    同源策略
+    WebConfiguration implements WebMvcConfigurer
+
+    修改actuator ping URL
+    @Bean
+    public IPing ribbonPing(final IClientConfig config) {
+        return new PingUrl(false,"/actuator/health");
+    }
+
+    注释掉：public IRule ribbonRule(final IClientConfig config)   
+    否则会覆盖默认规则  
+
+    @Query("SELECT SUM(s.score) FROM microservices.book.gamification.domain.ScoreCard 
+    s WHERE s.userId = :userId GROUP BY s.userId")
+    Integer getTotalScoreForUser(@Param("userId") final Long userId);
+    返回值int 改成Integer 要自己进行null判断  

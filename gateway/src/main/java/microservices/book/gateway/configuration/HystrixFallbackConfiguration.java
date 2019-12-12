@@ -1,11 +1,11 @@
 package microservices.book.gateway.configuration;
 
 import org.springframework.cloud.netflix.zuul.filters.route.FallbackProvider;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.client.ClientHttpResponse;
+import org.springframework.stereotype.Component;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import java.io.InputStream;
 /**
  * @author moises.macero
  */
-@Configuration
+@Component
 public class HystrixFallbackConfiguration implements FallbackProvider {
 
     @Override
